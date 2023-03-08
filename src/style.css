@@ -31,31 +31,6 @@ header h2 {
   max-width: 1600px;
 }
 
-@media (max-width: 900px) {
-  header {
-    padding: 100px 0px;
-  }
-  h1 {
-    font-size: 42px;
-  }
-  header h2 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 500px) {
-  header {
-    padding: 20px 0px;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-  header h2 {
-    font-size: 24px;
-  }
-}
-
 .footer-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/footer-image.jpg);
@@ -95,4 +70,51 @@ footer a {
 
 a:hover {
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 100px 0px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 0px 100px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+  header h2 {
+    font-size: 24px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    padding: 20px;
+  }
+
+  .column-one {
+    padding: 10px 60px;
+  }
+  .column-two,
+  .column-three {
+    display: none;
+  }
 }
