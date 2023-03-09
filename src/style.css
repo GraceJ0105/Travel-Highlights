@@ -1,6 +1,7 @@
 body {
   font-family: "Lato", sans-serif;
   margin: 0 auto;
+  background-color: #eeeeee;
 }
 
 header {
@@ -26,9 +27,24 @@ header h2 {
   font-size: 45px;
 }
 
+main,
 .container {
   margin: 0 auto;
   max-width: 1600px;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 100px;
+  background-color: whitesmoke;
+}
+
+section img {
+  max-height: 700px;
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
 }
 
 .footer-container {
@@ -44,7 +60,13 @@ header h2 {
   margin: 0 auto;
 }
 
-.grid {
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   line-height: 1.5;
@@ -82,14 +104,23 @@ a:hover {
   header h2 {
     font-size: 30px;
   }
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  .grid-footer {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
     padding: 0px 100px;
+    line-height: 1.2;
+  }
+  .grid-main {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  section {
+    padding: 60px
   }
 
   footer p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -104,17 +135,13 @@ a:hover {
   header h2 {
     font-size: 24px;
   }
-  .grid {
+
+  footer h3 {
+    font-size: 15px;
+  }
+  .grid-footer {
     grid-template-columns: 1fr;
     grid-gap: 0px;
-    padding: 20px;
-  }
-
-  .column-one {
-    padding: 10px 60px;
-  }
-  .column-two,
-  .column-three {
-    display: none;
+    padding: 30px;
   }
 }
