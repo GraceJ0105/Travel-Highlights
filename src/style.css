@@ -46,7 +46,54 @@ section img {
   display: block;
   margin: 0px auto;
 }
+.secondary-section {
+  background-color: #eeeee3;
+}
 
+.secondary-section h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.card {
+  background-color: whitesmoke;
+  margin-top: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0px;
+}
+.card .btn {
+  color: whitesmoke;
+  background-color: #2f4170;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  max-width: 50%;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.card img {
+  max-width: 50%;
+  display: block;
+}
+
+.grid-secondary-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
 .footer-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/footer-image.jpg);
@@ -86,7 +133,6 @@ li {
 
 footer a {
   color: #c4b4b4;
-
   text-decoration: none;
 }
 
@@ -114,9 +160,11 @@ a:hover {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
-
+  .grid-secondary-section {
+    grid-template-columns: 1fr;
+  }
   section {
-    padding: 60px
+    padding: 60px;
   }
 
   footer p {
