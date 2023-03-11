@@ -165,10 +165,14 @@ a:hover {
   }
   section {
     padding: 60px;
+    max-width: 850px;
   }
 
   footer p {
     font-size: 15px;
+  }
+  .secondary-section h2 {
+    font-size: 40px;
   }
 }
 
