@@ -19,12 +19,14 @@ h1 {
   text-transform: uppercase;
   font-size: 60px;
   line-height: 2;
+  font-weight: 500;
 }
 
 header h2 {
   color: #ffffff;
   letter-spacing: 3px;
-  font-size: 45px;
+  font-size: 40px;
+  font-weight: 300;
 }
 
 main,
@@ -40,11 +42,17 @@ section {
   background-color: whitesmoke;
 }
 
-section img {
-  max-height: 700px;
+.main-section-image {
+  max-height: 600px;
   max-width: 100%;
   display: block;
   margin: 0px auto;
+}
+
+.main-section-text {
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 150px 40px 0px 30px;
 }
 .secondary-section {
   background-color: #eeeee3;
@@ -93,18 +101,35 @@ section img {
   width: 100%;
   aspect-ratio: 1/0.755;
 }
+
+.embed-section h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.embed-section {
+  background-color: whitesmoke;
+}
 .card-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0
+  grid-gap: 0;
 }
 .grid-secondary-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
 }
+.instagram-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 20px;
+}
 .footer-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/footer-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -130,6 +155,15 @@ section img {
   padding: 50px;
 }
 
+.grid-footer h3,
+p {
+  font-weight: 500;
+}
+
+.grid-footer p {
+  font-size: 14px;
+}
+
 ul {
   list-style: none;
   margin: 0px;
@@ -138,10 +172,11 @@ ul {
 
 li {
   margin: 0px;
+  font-size: 14px;
 }
 
 footer a {
-  color: #c4b4b4;
+  color: rgb(181, 169, 236);
   text-decoration: none;
 }
 
@@ -161,8 +196,8 @@ a:hover {
   }
   .grid-footer {
     grid-template-columns: 1fr;
-    grid-gap: 15px;
-    padding: 0px 100px;
+    grid-gap: 0px;
+    padding: 0px 60px;
     line-height: 1.2;
   }
   .grid-main {
@@ -173,10 +208,13 @@ a:hover {
     grid-template-columns: 1fr;
   }
   section {
-    padding: 60px;
+    padding: 40px 60px;
     max-width: 850px;
   }
 
+  .main-section-text {
+    padding: 10px 60px;
+  }
   footer p {
     font-size: 15px;
   }
@@ -186,9 +224,15 @@ a:hover {
   .card-header img {
     display: none;
   }
-
+  .card-header {
+    grid-template-columns: 1fr;
+  }
   .embed {
     aspect-ratio: 16/9;
+  }
+  .instagram-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 }
 
