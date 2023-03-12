@@ -85,10 +85,19 @@ section img {
 }
 
 .card img {
-  max-width: 50%;
+  max-width: 100%;
   display: block;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/0.755;
+}
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0
+}
 .grid-secondary-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -173,6 +182,13 @@ a:hover {
   }
   .secondary-section h2 {
     font-size: 40px;
+  }
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
 
