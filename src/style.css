@@ -10,7 +10,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 180px 0px;
+  padding: 160px 10px 140px 10px;
   text-align: center;
 }
 
@@ -76,9 +76,15 @@ section {
 .card h3 {
   margin-top: 0px;
 }
-.card .btn {
-  color: whitesmoke;
-  background-color: #2f4170;
+
+header .btn {
+  color: #2f4170;
+  background-color: whitesmoke;
+  max-width: 20%;
+  margin-top: 50px;
+}
+
+.btn {
   text-decoration: none;
   font-weight: 700;
   font-size: 15px;
@@ -87,9 +93,15 @@ section {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
-  max-width: 50%;
+  
   text-transform: uppercase;
   border-radius: 3px;
+}
+
+.card .btn {
+  color: whitesmoke;
+  background-color: #2f4170;
+  max-width: 50%;
 }
 
 .card img {
@@ -186,13 +198,17 @@ a:hover {
 
 @media (max-width: 900px) {
   header {
-    padding: 100px 0px;
+    padding: 30px 30px;
   }
   h1 {
     font-size: 42px;
   }
   header h2 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  header .btn {
+    font-size: 14px;
   }
   .grid-footer {
     grid-template-columns: 1fr;
@@ -236,7 +252,7 @@ a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   header {
     padding: 20px 0px;
   }
@@ -245,8 +261,36 @@ a:hover {
     font-size: 36px;
   }
   header h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
+
+  header .btn {
+font-size: 10px;
+margin-top: 30px;
+max-width: 30%;
+  }
+
+  .main-section-text {
+    padding: 0px;
+    font-size: 14px;
+  }
+
+  .main-section-image {
+    max-height: 300px;
+  }
+
+  .secondary-section h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+
+  .card {
+    margin-top: 0px;
+  }
+
+.embed-section h2 {
+  font-size: 30px;
+}
 
   footer h3 {
     font-size: 15px;
